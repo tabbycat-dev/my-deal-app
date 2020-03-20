@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="400dp"
+    android:layout_height="wrap_content">
+
+    <TextView
+        android:id="@+id/tvPrompt"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Enter link"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:textStyle="bold" />
+
+    <EditText
+        android:id="@+id/etLink"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/tvPrompt"
+        android:inputType="textCapSentences"
+        android:text="https://www.chemistwarehouse.com.au/buy/79803/neutrogena-hydro-boost-gel-cream-50g"
+        />
+
+
+    <Button
+        android:id="@+id/btnCancel"
+        style="?android:attr/borderlessButtonStyle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/etLink"
+        android:layout_marginTop="5dp"
+        android:layout_toLeftOf="@+id/btnOk"
+        android:layout_toStartOf="@+id/btnOk"
+        android:text="@android:string/cancel" />
+
+    <Button
+        android:id="@+id/btnOk"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:layout_below="@+id/etLink"
+        android:layout_marginTop="5dp"
+        android:text="@android:string/ok" />
+
+</RelativeLayout>
