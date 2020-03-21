@@ -1,45 +1,33 @@
 <?xml version="1.0" encoding="utf-8"?>
-<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context=".MainActivity">
 
-    <TextView
-        android:id="@+id/textPrice"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Hello World!" />
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/re_itemList"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        app:layout_constraintBottom_toTopOf="@+id/progress_bar"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.0"
+        tools:listitem="@layout/list_item_row" />
 
-    <TextView
-        android:id="@+id/textTitle"
-        android:layout_width="match_parent"
-        android:layout_height="137dp"
-        android:layout_above="@+id/button"
-        android:layout_alignParentTop="true"
-        android:layout_marginTop="119dp"
-        android:layout_marginBottom="0dp"
-        android:textSize="20sp"></TextView>
-
-    <Button
-        android:id="@+id/button"
-        android:layout_width="wrap_content"
+    <ProgressBar
+        android:id="@+id/progress_bar"
+        android:layout_width="0dp"
         android:layout_height="wrap_content"
-        android:layout_above="@+id/imageView"
-        android:layout_marginLeft="164dp"
-        android:layout_marginRight="159dp"
-        android:layout_marginBottom="297dp"
-        android:text="Load text" />
-
-    <ImageView
-        android:id="@+id/imageView"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginLeft="164dp"
-        android:layout_marginRight="159dp"
-        app:srcCompat="@drawable/ic_launcher_background"
-        android:layout_alignParentBottom="true"
+        style="@android:style/Widget.ProgressBar.Horizontal"
+        android:visibility="invisible"
+        android:indeterminate="true"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
         />
 
-</RelativeLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>

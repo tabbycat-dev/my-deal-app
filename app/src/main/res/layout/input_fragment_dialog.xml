@@ -18,8 +18,11 @@
         android:layout_height="wrap_content"
         android:layout_below="@+id/tvPrompt"
         android:inputType="textCapSentences"
-        android:text="https://www.chemistwarehouse.com.au/buy/79803/neutrogena-hydro-boost-gel-cream-50g"
-        />
+        android:text=
+            "https://www.chemistwarehouse.com.au/buy/79803/neutrogena-hydro-boost-gel-cream-50g"
+>
+
+    </EditText>
 
 
     <Button
